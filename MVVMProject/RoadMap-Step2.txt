@@ -1,0 +1,10 @@
+﻿1. Add Helpers/Selectors folder to the project
+2. Create ProductDataTemplateSelector class
+3. Rectifiy the AppResources.xaml dictionary to have two DataTemplates one 
+for the available products and the other for the nunavalable products
+4. Add ProductDataTemplateSelector as a ressource in the AppResources.xaml 
+dictionary with the key as productTemplates
+5. Refer the selector in the CollectionView inside the DataViewPage 
+6. Add the IsRefershing and RefershCommand properties in the DataViewModel
+7. WrapUp the CollectionView in a RefershView and set IsRefershing and the Command
+ properties of the RefershView

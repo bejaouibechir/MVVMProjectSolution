@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:vm="clr-namespace:MVVMProject.ViewModels"
+                    xmlns:selectors="clr-namespace:MVVMProject.Helpers.Selectors"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!--This part is removed
+             x:Class="MVVMProject.Resources.Styles.AppResources">-->
+
+    <vm:DataViewModel x:Key="vm"/>
+    
+    <LinearGradientBrush x:Key="color" EndPoint="1,0">
+        <GradientStop Offset="0" Color="#F8F9Fa"/>
+        <GradientStop Offset="0" Color="#00E2E6"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="color2" EndPoint="1,0">
+        <GradientStop Offset="0" Color="#F8F9FA"/>
+        <GradientStop Offset="0" Color="#FF5500"/>
+    </LinearGradientBrush>
+
+    <DataTemplate x:Key="productStyle">
+        <Grid Margin="15,10,15,0" 
+                  RowDefinitions="*,*"
+                  ColumnDefinitions=".1*,.2*,.7*">
+            <Frame 
+                    Grid.RowSpan="2"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    BorderColor="White"
+                    Background="{StaticResource color}">
+            </Frame>
+            <Image Grid.ColumnSpan="2"
+                       Grid.RowSpan="2" Source="{Binding Image}"/>
+            <Label Text="{Binding Name}" VerticalOptions="Center"
+                       FontSize="Large" Grid.Column="2"/>
+            <Label Text="{Binding Price,StringFormat='{0:C}'}" 
+                       VerticalOptions="Center"
+                       FontSize="Large" Grid.Column="2" 
+                       Grid.Row="1"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="productHasNoOfferStyle">
+        <Grid Margin="15,10,15,0" 
+                  RowDefinitions="*,*"
+                  ColumnDefinitions=".1*,.2*,.7*">
+            <Frame
+                    Grid.RowSpan="2"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    BorderColor="White"
+                    Background="{StaticResource color2}">
+            </Frame>
+            <Image Grid.ColumnSpan="2"
+                       Grid.RowSpan="2" Source="{Binding Image}"/>
+            <Label Text="{Binding Name}" VerticalOptions="Center"
+                       FontSize="Large" Grid.Column="2"/>
+            <Label Text="{Binding Price,StringFormat='{0:C}'}" 
+                       VerticalOptions="Center"
+                       FontSize="Large" Grid.Column="2" 
+                       Grid.Row="1"/>
+        </Grid>
+    </DataTemplate>
+    <selectors:ProductDataTemplateSelector x:Key="productTemplates"/>
+    
+</ResourceDictionary>

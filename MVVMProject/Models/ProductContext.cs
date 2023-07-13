@@ -16,7 +16,7 @@ namespace MVVMProject.Models
                          Name = "Yogurt",
                          Price = 60.0m,
                          Image = "yogurt.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 28
                      },
                      new Product
@@ -24,7 +24,7 @@ namespace MVVMProject.Models
                          Name = "Watermelon",
                          Price = 30.0m,
                          Image = "watermelon.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 87
                      },
                      new Product
@@ -41,7 +41,7 @@ namespace MVVMProject.Models
                          Name = "Tomato",
                          Price = 120.0m,
                          Image = "tomato.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 0
                      },
                      new Product
@@ -57,7 +57,7 @@ namespace MVVMProject.Models
                          Name = "Sparkling Drink",
                          Price = 35.0m,
                          Image = "sparkling_drink.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 728
                      },
                      new Product
@@ -81,7 +81,7 @@ namespace MVVMProject.Models
                          Name = "Snack",
                          Price = 25.0m,
                          Image = "009_snack.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 2
                      },
                      new Product
@@ -114,7 +114,7 @@ namespace MVVMProject.Models
                          Name = "Rice",
                          Price = 48.0m,
                          Image = "rice.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 143
                      },
                      new Product
@@ -122,7 +122,7 @@ namespace MVVMProject.Models
                          Name = "Peas",
                          Price = 114.0m,
                          Image = "peas.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 0
                      },
                      new Product
@@ -148,7 +148,7 @@ namespace MVVMProject.Models
                          Name = "Pizza",
                          Price = 321.0m,
                          Image = "pizza.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 559
                      },
                      new Product
@@ -189,7 +189,7 @@ namespace MVVMProject.Models
                          Name = "Mushroom",
                          Price = 28.0m,
                          Image = "mushroom.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 17
                      },
                      new Product
@@ -197,7 +197,7 @@ namespace MVVMProject.Models
                          Name = "Milk Bottle",
                          Price = 85.0m,
                          Image = "milk_bottle.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 39
                      },
                      new Product
@@ -205,7 +205,7 @@ namespace MVVMProject.Models
                          Name = "Meat",
                          Price = 450.0m,
                          Image = "meat.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 28
                      },
                      new Product
@@ -213,7 +213,7 @@ namespace MVVMProject.Models
                          Name = "Lemon",
                          Price = 20.0m,
                          Image = "lemon.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 87
                      },
                      new Product
@@ -221,7 +221,7 @@ namespace MVVMProject.Models
                          Name = "Tomato Sauce",
                          Price = 15.0m,
                          Image = "tomato_sauce.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 26
                      },
                      new Product
@@ -254,7 +254,7 @@ namespace MVVMProject.Models
                          Name = "Ice",
                          Price = 125.0m,
                          Image = "ice.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 22
                      },
                      new Product
@@ -262,7 +262,7 @@ namespace MVVMProject.Models
                          Name = "Flour",
                          Price = 86.0m,
                          Image = "flour.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 28
                      },
                      new Product
@@ -278,7 +278,7 @@ namespace MVVMProject.Models
                          Name = "Fish 2",
                          Price = 425.0m,
                          Image = "fish.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 24
                      },
                      new Product
@@ -286,7 +286,7 @@ namespace MVVMProject.Models
                          Name = "Eggs",
                          Price = 150.0m,
                          Image = "eggs.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 47
                      },
                      new Product
@@ -319,7 +319,7 @@ namespace MVVMProject.Models
                          Name = "Coffee",
                          Price = 154.0m,
                          Image = "toffee.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 83
                      },
                      new Product
@@ -327,7 +327,7 @@ namespace MVVMProject.Models
                          Name = "Chocolate Bar",
                          Price = 32.0m,
                          Image = "chocolate_bar.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 21
                      },
                      new Product
@@ -344,7 +344,7 @@ namespace MVVMProject.Models
                          Name = "Carrot",
                          Price = 15.0m,
                          Image = "carrot.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 28
                      },
                      new Product
@@ -352,7 +352,7 @@ namespace MVVMProject.Models
                          Name = "Canned Food",
                          Price = 89.0m,
                          Image = "canned_food.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 773
                      },
                      new Product
@@ -368,7 +368,7 @@ namespace MVVMProject.Models
                          Name = "Candies",
                          Price = 55.0m,
                          Image = "candy.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 71
                      },
                      new Product
@@ -393,7 +393,7 @@ namespace MVVMProject.Models
                          Name = "Bread",
                          Price = 85.0m,
                          Image = "bread.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 8
                      },
                      new Product
@@ -418,7 +418,7 @@ namespace MVVMProject.Models
                          Name = "Alcohol",
                          Price = 370.0m,
                          Image = "alcohol.png",
-                         HasOffer = false,
+                         HasOffer = true,
                          Stock = 9
                      },
                };

@@ -5,31 +5,16 @@
              xmlns:vm="clr-namespace:MVVMProject.ViewModels"
              Title="DataView">
     <ContentPage.Resources>
-        <vm:DataViewModel x:Key="vm"/>
-        <LinearGradientBrush x:Key="color" EndPoint="1,0">
-            <GradientStop Offset="0" Color="#F8F9Fa"/>
-            <GradientStop Offset="0" Color="#DEE2E6"/>
-        </LinearGradientBrush>
-        
-        <DataTemplate x:Key="template">
-            <Grid Margin="15,10,15,0" 
-                  RowDefinitions="*,*"
-                  ColumnDefinitions=".1*,.2*,.7*">
-                <Frame
-                    Grid.RowSpan="2"
-                    Grid.Column="1"
-                    Grid.ColumnSpan="2"
-                    BorderColor="White"
-                    BackgroundColor="{StaticResource color}">
-                </Frame>
-                <Image Grid.ColumnSpan="2"
-                       Grid.RowSpan="2" Source="{Binding Image}"/>
-                <Label Text="{Binding Name}" VerticalOptions="Center"
-                       FontSize="Large" Grid.Column="2"/>
-            </Grid>
-        </DataTemplate>
+      
     </ContentPage.Resources>
     
-    <CollectionView BindingContext="{StaticResource vm}"
-        ItemsSource="{Binding Products}"/>
+    <!--Put the CollectionView inside a Rereshing-->
+
+    <RefreshView IsRefreshing="{Binding IsRefershing}"
+                 Command="{Binding RefershCommand}">
+            <CollectionView BindingContext="{StaticResource vm}"
+                ItemsSource="{Binding Products}"
+                ItemTemplate="{StaticResource productTemplates}"/>  
+    </RefreshView>
+    
 </ContentPage>
