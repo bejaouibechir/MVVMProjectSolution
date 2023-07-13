@@ -1,0 +1,2 @@
+﻿1.Create a datatemplate for the collectionview please refer to the
+DataViewPage.XAML file
