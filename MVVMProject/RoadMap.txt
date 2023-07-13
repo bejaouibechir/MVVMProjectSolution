@@ -1,0 +1,6 @@
+﻿1.Create Models,ViewModels and View Folders
+2.Create Product and ProductContext in Models Folder
+3.Create DataViewModel class in ViewModels Folder
+4.Create DataViewPage in View Folder and set 
+  the BindingContext to a DataViewModel instance and the 
+  ItemsSource of the collectionView to Products
