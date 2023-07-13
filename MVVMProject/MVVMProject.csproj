@@ -49,6 +49,62 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\alcohol.png" />
+	  <None Remove="Resources\Images\apple.png" />
+	  <None Remove="Resources\Images\banana.png" />
+	  <None Remove="Resources\Images\bread.png" />
+	  <None Remove="Resources\Images\bread_1.png" />
+	  <None Remove="Resources\Images\cake.png" />
+	  <None Remove="Resources\Images\can.png" />
+	  <None Remove="Resources\Images\candy.png" />
+	  <None Remove="Resources\Images\canned_food.png" />
+	  <None Remove="Resources\Images\carrot.png" />
+	  <None Remove="Resources\Images\cheese.png" />
+	  <None Remove="Resources\Images\chicken_leg.png" />
+	  <None Remove="Resources\Images\chocolate_bar.png" />
+	  <None Remove="Resources\Images\cookie.png" />
+	  <None Remove="Resources\Images\cream.png" />
+	  <None Remove="Resources\Images\croissant.png" />
+	  <None Remove="Resources\Images\cucumber.png" />
+	  <None Remove="Resources\Images\eggs.png" />
+	  <None Remove="Resources\Images\fish.png" />
+	  <None Remove="Resources\Images\fish_1.png" />
+	  <None Remove="Resources\Images\flour.png" />
+	  <None Remove="Resources\Images\ham.png" />
+	  <None Remove="Resources\Images\ham_1.png" />
+	  <None Remove="Resources\Images\ice.png" />
+	  <None Remove="Resources\Images\ice_cream.png" />
+	  <None Remove="Resources\Images\juice.png" />
+	  <None Remove="Resources\Images\lemon.png" />
+	  <None Remove="Resources\Images\meat.png" />
+	  <None Remove="Resources\Images\milk_bottle.png" />
+	  <None Remove="Resources\Images\mushroom.png" />
+	  <None Remove="Resources\Images\notfound.png" />
+	  <None Remove="Resources\Images\no_internet.png" />
+	  <None Remove="Resources\Images\oil_bottle.png" />
+	  <None Remove="Resources\Images\pasta.png" />
+	  <None Remove="Resources\Images\peas.png" />
+	  <None Remove="Resources\Images\pepper.png" />
+	  <None Remove="Resources\Images\pineapple.png" />
+	  <None Remove="Resources\Images\pizza.png" />
+	  <None Remove="Resources\Images\rice.png" />
+	  <None Remove="Resources\Images\sauce.png" />
+	  <None Remove="Resources\Images\seasoning.png" />
+	  <None Remove="Resources\Images\shrimp.png" />
+	  <None Remove="Resources\Images\snack.png" />
+	  <None Remove="Resources\Images\spaguetti.png" />
+	  <None Remove="Resources\Images\sparkling_drink.png" />
+	  <None Remove="Resources\Images\tea_bag.png" />
+	  <None Remove="Resources\Images\toffee.png" />
+	  <None Remove="Resources\Images\tomato.png" />
+	  <None Remove="Resources\Images\tomato_sauce.png" />
+	  <None Remove="Resources\Images\trash.png" />
+	  <None Remove="Resources\Images\watermelon.png" />
+	  <None Remove="Resources\Images\water_bottle.png" />
+	  <None Remove="Resources\Images\yogurt.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
