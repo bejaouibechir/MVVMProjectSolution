@@ -1,4 +1,5 @@
-﻿namespace MVVMProject;
+﻿using MVVMProject.Views;
+namespace MVVMProject;
 
 public partial class App : Application
 {
@@ -6,6 +7,7 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
+		//MainPage = new AppShell
+		MainPage = new DataViewPage();
 	}
 }
