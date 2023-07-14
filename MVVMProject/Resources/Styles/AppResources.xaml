@@ -7,7 +7,7 @@
 
     <!--This part is removed
              x:Class="MVVMProject.Resources.Styles.AppResources">-->
-
+    
     <vm:DataViewModel x:Key="vm"/>
     
     <LinearGradientBrush x:Key="color" EndPoint="1,0">
@@ -21,7 +21,23 @@
     </LinearGradientBrush>
 
     <DataTemplate x:Key="productStyle">
-        <Grid Margin="15,10,15,0" 
+        <SwipeView>
+            <SwipeView.LeftItems>
+                <SwipeItems>
+                    <SwipeItem 
+                    Command="{Binding 
+                    Path=DeleteCommmand,
+                    Source={RelativeSource
+                     Mode=FindAncestorBindingContext,  
+                     AncestorType={x:Type vm:DataViewModel}}}"
+                        
+                    CommandParameter="{Binding}"
+                     IconImageSource="delete.png">
+
+                    </SwipeItem>
+                </SwipeItems>
+            </SwipeView.LeftItems>
+           <Grid Margin="15,10,15,0" 
                   RowDefinitions="*,*"
                   ColumnDefinitions=".1*,.2*,.7*">
             <Frame 
@@ -40,6 +56,8 @@
                        FontSize="Large" Grid.Column="2" 
                        Grid.Row="1"/>
         </Grid>
+        </SwipeView>
+        
     </DataTemplate>
 
     <DataTemplate x:Key="productHasNoOfferStyle">
@@ -64,5 +82,8 @@
         </Grid>
     </DataTemplate>
     <selectors:ProductDataTemplateSelector x:Key="productTemplates"/>
-    
+
+
+   
+
 </ResourceDictionary>

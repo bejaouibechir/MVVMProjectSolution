@@ -12,9 +12,40 @@
 
     <RefreshView IsRefreshing="{Binding IsRefershing}"
                  Command="{Binding RefershCommand}">
-            <CollectionView BindingContext="{StaticResource vm}"
+        <!--<CollectionView 
+                SelectionMode="Single"
+                BindingContext="{StaticResource vm}"
                 ItemsSource="{Binding Products}"
-                ItemTemplate="{StaticResource productTemplates}"/>  
+                SelectedItem="{Binding SelectedProduct}"
+                ItemTemplate="{StaticResource productTemplates}"
+                            RemainingItemsThreshold="1"
+                            RemainingItemsThresholdReachedCommand="{Binding ThersHoldCommand}"
+                            
+                 >-->
+        <CollectionView 
+                SelectionMode="Multiple"
+                BindingContext="{StaticResource vm}"
+                ItemsSource="{Binding Products}"
+                SelectedItems="{Binding SelectedProducts}"
+                SelectionChangedCommand="{Binding SelectedProductsChangedCommand}"
+                ItemTemplate="{StaticResource productTemplates}"
+                            RemainingItemsThreshold="1"
+                            RemainingItemsThresholdReachedCommand="{Binding ThersHoldCommand}"
+                            
+                 >
+            <CollectionView.Header>
+                <Frame Margin="5" BackgroundColor="{StaticResource Primary}">
+                    <Label Text="Products" FontSize="Large" 
+                           TextColor="{StaticResource White}"/>
+                </Frame>
+            </CollectionView.Header>
+            <CollectionView.Footer>
+                <Frame Margin="5" BackgroundColor="{StaticResource Primary}">
+                    <Label Text="Products" FontSize="Large" 
+                           TextColor="{StaticResource White}"/>
+                </Frame>
+            </CollectionView.Footer>
+        </CollectionView>
     </RefreshView>
     
 </ContentPage>

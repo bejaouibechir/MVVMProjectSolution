@@ -66,6 +66,7 @@
 	  <None Remove="Resources\Images\cream.png" />
 	  <None Remove="Resources\Images\croissant.png" />
 	  <None Remove="Resources\Images\cucumber.png" />
+	  <None Remove="Resources\Images\delete.png" />
 	  <None Remove="Resources\Images\eggs.png" />
 	  <None Remove="Resources\Images\fish.png" />
 	  <None Remove="Resources\Images\fish_1.png" />

@@ -1,0 +1,5 @@
+﻿1. Add delete.png icon to the images folder 
+2. Add a DeleteCommand to the DataViewModel 
+3. Add SwipView to the ProductDataTemplate that has HasOffer = true
+4. Add a selection and multiselection behaviour to the collection view
+
